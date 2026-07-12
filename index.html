@@ -5,113 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - IjaraBor</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        h1 { color: #2e7d32; border-bottom: 2px solid #e8f5e9; padding-bottom: 10px; }
-        h2 { color: #388e3c; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        .footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 14px;
-            color: #888;
-        }
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .lang-switch a {
-            color: #2e7d32;
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 15px;
-        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f6; }
+        .container { background-color: #fff; padding: 50px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        h1 { color: #1b5e20; font-size: 28px; border-bottom: 3px solid #e8f5e9; padding-bottom: 15px; margin-bottom: 30px; }
+        h2 { color: #2e7d32; font-size: 20px; margin-top: 35px; border-left: 5px solid #4caf50; padding-left: 15px; }
+        p, li { font-size: 15px; color: #444; }
+        ul { padding-left: 25px; }
+        .footer { margin-top: 50px; text-align: center; font-size: 13px; color: #999; border-top: 1px solid #eee; padding-top: 20px; }
+        .lang-section { margin-bottom: 60px; }
+        .highlight { font-weight: bold; color: #000; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="lang-switch">
-        <a href="#uz">O'zbekcha</a> | <a href="#en">English</a>
-    </div>
+    <!-- O'ZBEK TILI -->
+    <div class="lang-section">
+        <h1>Maxfiylik Siyosati (IjaraBor)</h1>
+        <p><strong>Oxirgi yangilangan sana:</strong> 24-may, 2026-yil</p>
 
-    <div id="uz">
-        <h1>Maxfiylik Siyosati</h1>
-        <p><strong>Oxirgi yangilangan sana:</strong> 24-may, 2024-yil</p>
-        
-        <p>"IjaraBor" jamoasi sizning maxfiyligingizni hurmat qiladi. Ushbu hujjat bizning mobil ilovamiz orqali ma'lumotlarni qanday yig'ishimiz va himoya qilishimizni tushuntiradi.</p>
+        <p>"IjaraBor" jamoasi sizning shaxsiy ma'lumotlaringiz xavfsizligini ta'minlashni o'zining ustuvor vazifasi deb biladi. Ushbu siyosat Play Marketning eng so'nggi talablariga muvofiq ishlab chiqilgan.</p>
 
-        <h2>1. Ma'lumotlarni yig'ish va foydalanish</h2>
-        <p>Biz ilova sifatini oshirish va sizga yaqin bo'lgan ijara e'lonlarini ko'rsatish uchun quyidagi ma'lumotlarni so'raymiz:</p>
+        <h2>1. Biz yig'adigan ma'lumotlar</h2>
         <ul>
-            <li><strong>Joylashuv (GPS):</strong> Ilovamizning asosiy vazifasi sizning hududingizdagi e'lonlarni topishdir. Buning uchun biz sizning aniq koordinatalaringizdan foydalanamiz.</li>
-            <li><strong>Shaxsiy ma'lumotlar:</strong> Ism, telefon raqami va profil rasmi (Firebase Auth orqali).</li>
-            <li><strong>Media fayllar:</strong> Siz yuklayotgan e'lonlar uchun rasmlar (Kamera va Galereya ruxsati).</li>
+            <li><span class="highlight">Shaxsiy ma'lumotlar:</span> Ism, telefon raqami va profil rasmi (Firebase Auth orqali ro'yxatdan o'tish uchun).</li>
+            <li><span class="highlight">Aniq Joylashuv (GPS):</span> Ilovamizning asosiy funksiyasi "Hyper-local" xizmat bo'lgani uchun, sizga eng yaqin e'lonlarni ko'rsatish va masofani hisoblash uchun joylashuv ma'lumotlaridan foydalanamiz.</li>
+            <li><span class="highlight">Kamera va Galereya:</span> E'lon joylash jarayonida mahsulot rasmlarini yuklash uchun ushbu ruxsatnomalar talab qilinadi.</li>
+            <li><span class="highlight">Chat xabarlari:</span> Foydalanuvchilar o'rtasidagi muloqotni ta'minlash uchun chat xabarlari Firestore bazasida xavfsiz saqlanadi.</li>
         </ul>
 
-        <h2>2. Uchinchi tomon xizmatlari</h2>
-        <p>Xavfsiz va tezkor xizmat ko'rsatish uchun biz quyidagi provayderlar bilan ishlaymiz:</p>
+        <h2>2. Ma'lumotlardan foydalanish maqsadi</h2>
+        <p>Yig'ilgan ma'lumotlar faqat quyidagilar uchun ishlatiladi:</p>
         <ul>
-            <li>Google Firebase (Ma'lumotlar bazasi va Auth)</li>
-            <li>Meta (Facebook) Analytics & Ads</li>
+            <li>Ilova funksiyalarini ta'minlash (E'lon berish, qidirish, xarita).</li>
+            <li>Xavfsizlikni ta'minlash va firibgarlikni oldini olish.</li>
+            <li>Meta (Facebook) Ads orqali ilovani optimallashtirish.</li>
+            <li>Firebase Crashlytics orqali texnik xatolarni tuzatish.</li>
+        </ul>
+
+        <h2>3. Ma'lumotlarni uchinchi tomonlarga berish</h2>
+        <p>Biz ma'lumotlarni sotmaymiz. Faqatgina xizmat ko'rsatish uchun quyidagi texnologiyalardan foydalanamiz:</p>
+        <ul>
+            <li>Google Firebase (Baza va Avtorizatsiya)</li>
             <li>Cloudinary (Rasmlarni saqlash)</li>
+            <li>Meta SDK (Analitika va Reklama)</li>
         </ul>
 
-        <h2>3. Ma'lumotlarni o'chirish</h2>
-        <p>Foydalanuvchi istalgan vaqtda o'z profilini va barcha ma'lumotlarini ilova sozlamalari orqali yoki bizga murojaat qilib butunlay o'chirib tashlashi mumkin.</p>
+        <h2>4. Ma'lumotlarni o'chirish (Data Deletion)</h2>
+        <p>Foydalanuvchilar o'z ma'lumotlarini to'liq nazorat qilish huquqiga ega. Siz istalgan vaqtda:</p>
+        <ul>
+            <li>Ilova ichidagi "Profilni o'chirish" tugmasi orqali hisobingizni o'chirishingiz mumkin.</li>
+            <li>Barcha shaxsiy ma'lumotlar, e'lonlar va rasmlar 30 kun ichida bazadan butunlay yo'q qilinadi.</li>
+        </ul>
 
-        <h2>4. Bog'lanish</h2>
-        <p>Telegram: <a href="https://t.me/ijaraboradmin">@ijaraboradmin</a><br>
+        <h2>5. Bog'lanish</h2>
+        <p>Savollar bo'yicha murojaat qiling:<br>
+           Telegram: <a href="https://t.me/ijaraboradmin">@ijaraboradmin</a><br>
            Telefon: +998 77 789 59 50</p>
     </div>
 
-    <hr style="margin: 50px 0; border: 0; border-top: 1px solid #eee;">
+    <hr>
 
-    <div id="en">
-        <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> May 24, 2024</p>
-        
-        <p>IjaraBor ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by IjaraBor.</p>
+    <!-- ENGLISH SECTION -->
+    <div class="lang-section">
+        <h1>Privacy Policy (IjaraBor)</h1>
+        <p><strong>Last Updated:</strong> May 24, 2026</p>
 
-        <h2>1. Information Collection</h2>
-        <p>To provide a high-quality rental marketplace experience, we collect:</p>
+        <p>This Privacy Policy describes how IjaraBor ("we", "us", or "our") collects, uses, and shares your personal information when you use our mobile application.</p>
+
+        <h2>1. Information We Collect</h2>
         <ul>
-            <li><strong>Location Data (GPS):</strong> We access your location to show you nearby rental listings and calculate distances.</li>
-            <li><strong>Personal Data:</strong> Name, phone number, and profile picture provided during registration.</li>
-            <li><strong>Media:</strong> Photos you upload for your listings (requires Camera and Gallery access).</li>
+            <li><span class="highlight">Personal Information:</span> Name, phone number, and profile picture provided via Firebase Auth.</li>
+            <li><span class="highlight">Precise Location (GPS):</span> We collect precise location data to provide nearby rental listings and calculate distances between users.</li>
+            <li><span class="highlight">Camera and Gallery:</span> Required for uploading photos when creating rental listings.</li>
+            <li><span class="highlight">Communications:</span> In-app chat messages are securely stored to facilitate communication between renters and owners.</li>
         </ul>
 
-        <h2>2. Third-Party Services</h2>
-        <p>We use trusted third-party services that may collect information used to identify you:</p>
-        <ul>
-            <li>Google Firebase (Storage & Authentication)</li>
-            <li>Meta (Facebook) Ads & Analytics</li>
-            <li>Cloudinary (Image Hosting)</li>
-        </ul>
+        <h2>2. Data Safety & Usage</h2>
+        <p>We use the collected data to provide, maintain, and improve our services, including security monitoring and advertising optimization via Meta SDK.</p>
 
-        <h2>3. Data Deletion</h2>
-        <p>You have the right to request the deletion of your data at any time. You can delete your account directly within the app settings.</p>
+        <h2>3. Data Retention & Deletion</h2>
+        <p>Users have the right to delete their accounts at any time. Upon request via the "Delete Account" button in settings, all user data, including listings and photos, will be permanently removed from our servers within 30 days.</p>
 
-        <h2>4. Contact Us</h2>
-        <p>Telegram: <a href="https://t.me/ijaraboradmin">@ijaraboradmin</a><br>
-           Phone: +998 77 789 59 50</p>
+        <h2>4. Third-Party Services</h2>
+        <p>We share data only with trusted service providers: Google Firebase, Cloudinary, and Meta (Facebook) Ads.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>Email: support@ijarabor.uz<br>
+           Telegram: @ijaraboradmin</p>
     </div>
 
     <div class="footer">
-        &copy; 2024 IjaraBor Rental Marketplace. All rights reserved.
+        &copy; 2026 IjaraBor Rental Marketplace. All rights reserved.
     </div>
 </div>
 
